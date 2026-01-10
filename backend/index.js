@@ -40,7 +40,7 @@ io.on('connection', (socket) => {
 
 
 
-mongoose.connect("mongodb://localhost:27017/chat-app", {
+mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -50,9 +50,10 @@ mongoose.connect("mongodb://localhost:27017/chat-app", {
 const PORT = process.env.PORT||5000 ;
 
 app.use(cors({
-  origin: 'http://localhost:5173',  // your frontend URL
-  credentials: true,                 // allow cookies to be sent
+  origin: true,
+  credentials: true,
 }));
+
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
