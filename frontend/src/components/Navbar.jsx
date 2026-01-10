@@ -25,6 +25,13 @@ const Navbar = () => {
             >
               Home
             </Link>
+
+            <Link
+             to="/chat"
+              className="text-gray-700 hover:text-blue-600 transition"
+            >
+              Chat
+            </Link> 
             <Link
               to="/create"
               className="text-gray-700 hover:text-blue-600 transition"

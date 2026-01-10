@@ -5,7 +5,7 @@ import Register from "./pages/Register";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import CreatePost from "./pages/CreatePost";
-// import Chat from "./pages/Chat";
+import Chat from "./pages/Chat";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { useAuth } from "./context/AuthContext";
 
@@ -43,14 +43,14 @@ function App() {
               </ProtectedRoute>
             }
           />
-          {/* <Route
+          <Route
             path="/chat"
             element={
               <ProtectedRoute>
                 <Chat />
               </ProtectedRoute>
             }
-          /> */}
+          />
         </Routes>
       </div>
     </Router>
