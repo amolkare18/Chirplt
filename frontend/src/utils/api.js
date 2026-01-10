@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:5000/api", // Adjust as needed
+  baseURL: "https://chirplt.onrender.com/", // Adjust as needed
   withCredentials: true, // Ensures cookies are sent
 });
 
